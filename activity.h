@@ -10,6 +10,7 @@ unsigned int sumaIterativa(unsigned int n) {
 	}
 	return suma;                              //    O(1)
 }
+// Complejidad: O(1)+O(n)+O(1) = O(n)+O(2)
 
 unsigned int sumaRecursiva(unsigned int n) {
 	if (n==0){                                //    O(1)
@@ -17,10 +18,11 @@ unsigned int sumaRecursiva(unsigned int n) {
 	}
 	else return n+sumaRecursiva(n-1);         //    O(1)
 }
+// Complejidad: O(1)+O(1) = O(2)
 
 unsigned int sumaDirecta(unsigned int n) {        
 	return n*(n+1)/2;                         //    O(1)
 }
+// Complejidad: O(1)
 
 #endif /* ACTIVITY_H */
-az<>2222
